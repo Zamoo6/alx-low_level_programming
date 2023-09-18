@@ -5,6 +5,7 @@
  * _puts - prints a string to stdout
  * @str: pointer to the string to print
  */
-void _puts(char *str) {
-    printf("%s\n", str);
+void _puts(char *str)
+{
+	printf("%s\n", str);
 }
