@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * print_rev - function to print reverse
- * @s : pointer
- * Return: Always 0.
+ * puts2 -prints every other character of a string, starting with the first character.
+ * @str : the imput string.
+ * Return: void.
  */
 void puts2(char *str)
 {
