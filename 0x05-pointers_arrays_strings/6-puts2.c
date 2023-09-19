@@ -3,6 +3,7 @@
  * rev_string - reverses a string
  * @s: string to be reversed
  */
+
 void puts2(char *str)
 {
 	int i = 0;
