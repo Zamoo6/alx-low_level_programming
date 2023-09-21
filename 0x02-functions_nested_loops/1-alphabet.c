@@ -1,27 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ * print_alphabet - Entry point
+ * Return:0
  */
 
 void print_alphabet(void)
-
-int main(void)
 {
-	print_alphabet();
-	return 0;
-}
+	char c = 'a';
 
-void print_alphabet(void)
-{
-	char letter = 'a';
-	
-	while (letter <= 'z') 
+	while (c <= 'z')
 	{
-		_putchar(letter);
-		letter++;
+		_putchar(c);
+		c++;
+
 	}
-	
 	_putchar('\n');
+
 }
