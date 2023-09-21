@@ -1,47 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _stract - concatenates tow strings
+ * _strcat - concatenates two strings
  * @dest: string to append to
  * @src: string to add
  *
  * Return: a pointer to the resulting string
  */
-
 char *_strcat(char *dest, char *src)
 {
-	char *ptr = dest;
+	int i, j;
 
-	// find the end of the destination string
-	while (*ptr != '\0'
-		{
-		ptr++;
-		}
+	i = 0;
+	j = 0;
 
-	// append the source string to the desination string
-	while (*src != '\0'
-		{
-		*ptr = *src;
-		ptr++;
-		src++;
-		}
+	while (dest[i] != '\0')
+		i++;
 
-	// add the terminating null tyoe
-	*ptr = '\0';
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
 
-	return dest;
-}
+	dest[i] = '\0';
 
-int main(void)
-{
-	char str1[50] = "Hell0, ";
-	char str2[] = "world!";
-
-	printf("Before concatenation: %s\n", str1);
-
-	_strcat(str1, str2);
-
-	printf("after concatenation: %s\n", str1);
-
-	return 0;
+	return (dest);
 }
