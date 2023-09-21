@@ -1,15 +1,9 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main -  prints _putchar, followed by a new line
  * Return: Always 0 (Success)
  */
-
-char _putchar(char c)
-{
-	return write(1, &c, 1);
-}
 
 void print_alphabet(void)
 
