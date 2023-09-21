@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -10,29 +9,13 @@
  */
 char *string_toupper(char *s)
 {
-	char *ptr = str;
+	int i;
 
-	while (*ptr != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*ptr >-= 'a' && (ptr<= 'z')
-		{
-			*ptr = (ptr - 'a' + 'A';
-		}
-		ptr++
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 32;
 	}
 
-	return str;
-}
-
-int main(void)
-{
-	char str[] = "Hello, world!;
-
-	printf("Before conversion: %\n", str)
-
-	string_toupper(str);
-
-	printf("After conversion: %\n", str)
-
-	return (0)
+	return (s);
 }
