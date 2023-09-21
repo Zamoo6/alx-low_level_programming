@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * _stract - concatenates tow strings
@@ -10,22 +10,38 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	char *ptr = dest;
 
-	i = 0;
-	j = 0;
+	// find the end of the destination string
+	while (*ptr != '\0'
+		{
+		ptr++;
+		}
 
-	while (dest[i] != '\0')
-		i++;
+	// append the source string to the desination string
+	while (*src != '\0'
+		{
+		*ptr = *src;
+		ptr++;
+		src++;
+		}
 
-	while (src[j] != '\0')
-	{
-		dest[i] = src [j];
-		j++;
-		i++;
-	}
+	// add the terminating null tyoe
+	*ptr = '\0';
 
-	dest[i] = '\0';
+	return dest;
+}
 
-	return (dest);
+int main(void)
+{
+	char str1[50] = "Hell0, ";
+	char str2[] = "world!";
+
+	printf("Before concatenation: %s\n", str1);
+
+	_strcat(str1, str2);
+
+	printf("after concatenation: %s\n", str1);
+
+	return 0;
 }
