@@ -9,3 +9,14 @@ void set_string(char **, char *to)
 {
 	*s = to;
 }
+int main()
+{
+	char *str1 = "Hello";
+	char *str2 = "world";
+
+	printf("Vefore setting: %s\n", str1;
+	set_string(&str1, str2);
+	printf("After setting: %s\n", str1);
+
+	return 0;
+}
