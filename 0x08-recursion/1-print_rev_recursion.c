@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * fuction to print string in revers.
+ *_print_rev_recursion - fuction to print string in revers.
  * @s: string parameter
  *
  */
