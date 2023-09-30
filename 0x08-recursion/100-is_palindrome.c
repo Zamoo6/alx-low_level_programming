@@ -43,7 +43,7 @@ int find_strlen(char *s)
  * @index: the index of string to be checked
  *
  * Return: if the string is a palindrome - 1
- * 	   if the sting is not a palindrome - 0
+ * 	if the sting is not a palindrome - 0
  */
 int check_palindrome(char *s, int len, int index)
 {
