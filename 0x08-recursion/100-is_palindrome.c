@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * is_palindrome - returns ture if the given string is a palindrom
- * @s: sting to be check
- * Return: true if the given string is a palindome
- */
+* is_palindrome - returns true if the given string is a palindrome
+*@s: string to check
+*Return: true if the given string is a palindrome
+*/
 
 int is_palindrome(char *s)
 {
@@ -18,10 +18,10 @@ int is_palindrome(char *s)
 }
 
 /**
- * find_strlen - Returns lenght of string
- * @s: string to be measured
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
  *
- * Return: the length of the string
+ * Return: The length of the string.
  */
 int find_strlen(char *s)
 {
@@ -32,18 +32,18 @@ int find_strlen(char *s)
 		len++;
 		len += find_strlen(s + len);
 	}
-	
+
 	return (len);
 }
 
 /**
- * check_palindrome - check if string is palindrome
- * @s: the string to be checked
- * @len: length of s
- * @index: the index of string to be checked
+ * check_palindrome - Checks if a string is a palindrome.
+ * @s: The string to be checked.
+ * @len: The length of s.
+ * @index: The index of the string to be checked.
  *
- * Return: if the string is a palindrome - 1
- * 	if the sting is not a palindrome - 0
+ * Return: If the string is a palindrome - 1.
+ *         If the string is not a palindrome - 0.
  */
 int check_palindrome(char *s, int len, int index)
 {
