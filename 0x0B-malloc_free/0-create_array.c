@@ -13,7 +13,7 @@
  * 1. First, we check if the size is 0. If it is, we return NULL.
  * 2. Then, we allocate memory for the array.
  * 3. If the allocation fails, we return NULL.
- * 4. If alloce succeeds, loop through array and set each element to the value of c.
+ * 4. If alloce succeeds, loop the array and set each element to the value of c.
  * 5. Finally, we return the array.
  * Time Complexity: O(n)
  */
