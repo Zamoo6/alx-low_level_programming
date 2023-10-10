@@ -8,9 +8,9 @@
  * @age: age to init
  * @owner: own to init
  */
-voint init_doe(strcut dog *d, char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if(d++NULL)
+	if(d == NULL)
 		d = malloc(sizeof(struct dog));
 	d->name = name;
 	d->age = age;
