@@ -8,14 +8,14 @@
  * @argv: an aray of the commanf line arguments passed to the func
  * Return: 0 on success
  */
-in main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int cent_vals[] = {25, 10, 5, 2, 1};
 	int cents, number_of_cents, balance, i;
 
 	if (argc != 2)
 	{
-		printf("Error\n")
+		printf("Error\n");
 			return (1);
 	}
 	cents = atoi(argv[1]);
