@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - add argu from the cmd
- * @argc : number fo argu
- * @argv : the argu
- * Return : (0)s, (1)f
+ * main - adds argument from the cmd
+ * @argc: number of arguments
+ * @argv: the arguments
+ * Return: 0 on success, 1on fail
  */
 int main(int argc, char *argv[])
 {

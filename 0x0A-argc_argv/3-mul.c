@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints the result of multiplying to number
- * @argc : number of command line argu
- * @argv : string of argument passed to main
- * Return : (0)s, (1)f
+ * main - Prints the result of multiplying two numbers
+ * followed by a new line
+ * @argc : number of command-line arguments
+ * @argv : string of argumenst passed to main fcn
+ * Return: 0 (Success), 1 on failure
  */
-int main(int arc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, product;
 
